@@ -147,4 +147,4 @@ def respond(message):
 
 
 port = int(os.environ.get('PORT', 5050))  # Get the port from the environment or use 5000
-app.run( port=port)
+app.run(host='0.0.0.0', port=port)
