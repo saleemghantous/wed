@@ -1,4 +1,4 @@
-from flask import Flask,send_file, send_from_directory, request,Response
+from flask import Flask, send_from_directory, request
 import os
 import json
 from mongoengine import *
@@ -6,14 +6,14 @@ from flask_cors import CORS
 from python_script import login as login
 # from python_script import twilio_functions as twilio_fn
 from python_script import items_functions as items_func
-import requests
-from pymongo.mongo_client import MongoClient
+# Removed unused import
+# Removed unused import
 import pymongo 
 import os
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-from twilio.rest import Client
-from twilio.request_validator import RequestValidator
+# Removed unused import
+from twilio.request_validator import RequestValidator  # Required for validating Twilio requests
 import urllib.parse
 
 username = "admin"
@@ -54,7 +54,7 @@ def login_request():
 @app.route("/api/mp3", methods=["POST"])
 def mp3():
     print(request.data)
-    mp3_file_path = 'C:/Users/Saleem/Desktop/exercise.mp3'
+    # Removed unused variable mp3_file_path
     # Return the MP3 file using Flask's send_file function
     return {}
 
@@ -120,6 +120,7 @@ def get_information():
 def reply():
     print("saleem")
     # Validate Twilio request signature
+    validator = RequestValidator("your_auth_token")  # Replace with your Twilio auth token
     is_valid_request = validator.validate(
         request.url,
         request.form,
@@ -146,5 +147,4 @@ def respond(message):
 # app.run(port=5050, debug=True)
 
 
-port = int(os.environ.get('PORT', 5050))  # Get the port from the environment or use 5000
-app.run(host='0.0.0.0', port=port)
+app.run(host='0.0.0.0')  # Run the app on the server's default port
