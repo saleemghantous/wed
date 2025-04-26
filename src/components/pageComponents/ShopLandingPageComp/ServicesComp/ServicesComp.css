@@ -1,0 +1,45 @@
+.services-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Adjust gradient as needed */
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    margin-bottom: 15px;
+  }
+  
+  .service-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .service-text {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  

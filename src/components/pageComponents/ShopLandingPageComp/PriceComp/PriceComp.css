@@ -1,0 +1,12 @@
+
+
+.discount {
+    margin: "1px";
+    border: "red solid 1px";
+    border-radius: "9px";
+    background-color: "white";
+    color: "red";
+    text-align: "right";
+    position: "absolute";
+    padding: "2px";
+}

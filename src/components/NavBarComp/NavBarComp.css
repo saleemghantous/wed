@@ -1,0 +1,74 @@
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 100%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 100%;
+  }
+
+  #portfolio {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* NavBarComp.css */
+.menu-container {
+  padding: 0;
+}
+
+.navbar {
+  height: 50px; /* Set the desired height */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar-brand, .nav-link, .nav-item, .navbar-nav {
+  padding: 0; /* Adjust padding for navbar content */
+  line-height: 50px; /* Align text vertically within the navbar */
+}
+
+.offcanvas-header, .offcanvas-title {
+  padding: 10px; /* Adjust padding for offcanvas header */
+}
+
+.form-control, .btn {
+  height: 30px; /* Adjust height for search input and button */
+  margin-top: 10px; /* Center search bar vertically */
+}
+
+.menu-container .navbar-brand img {
+
+  object-fit: contain;
+}
